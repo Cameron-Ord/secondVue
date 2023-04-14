@@ -54,4 +54,9 @@ height: 100%;
     justify-items: center;
 
 }
+
+@media only screen and (min-width: 1000px){
+
+
+}
 </style>

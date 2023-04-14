@@ -25,6 +25,9 @@ align-items: center;
 
 }
 
+@media only screen and (min-width: 1200px){
 
+    
+}
 
 </style>

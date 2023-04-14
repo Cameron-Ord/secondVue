@@ -34,12 +34,14 @@ export default {
 
 <style>
 
+
 *{
 
 
   padding: 0px;
   margin: 0px;
 }
+
 
 body{
 
@@ -66,6 +68,51 @@ grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 min-height: 10vh;
   display: grid;
   background-color: #B2DFD5;
-  height: 100%;
+
+
+
+}
+
+@media only screen and (min-width:  700px){
+
+
+  #PageHeader{
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+
+
+  #PageMain{
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+
+}
+
+  #PageFooter{
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+
+  }
+
+}
+
+@media only screen and (min-width: 1000px){
+
+  #PageHeader{
+grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+}
+
+#PageMain{
+  grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+
+
+  min-height: 70vh;
+}
+
+
+#PageFooter{
+  grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+
+
+  min-height: 10vh;
+  
+}
 }
 </style>
