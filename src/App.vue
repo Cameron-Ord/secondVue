@@ -23,9 +23,9 @@ import PageFooter from './components/PageFooter.vue';
 export default {
   name: 'App',
   components: {
- PageHeader,
- PageMain,
- PageFooter
+    PageHeader,
+    PageMain,
+    PageFooter
   }
 }
 </script>
@@ -33,9 +33,7 @@ export default {
 
 
 <style>
-
-
-*{
+* {
 
 
   padding: 0px;
@@ -43,76 +41,90 @@ export default {
 }
 
 
-body{
+body {
 
-background-color: #ECEBDA;
+  background-color: #ECEBDA;
 
 }
 
-#PageHeader{
-min-height: 10vh;
-display: grid;
-background-color: #B2DFD5;
-grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-}
+#PageHeader {
+  min-height: 10vh;
 
-#PageMain{
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   display: grid;
+
+  background-color: #B2DFD5;
+
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+#PageMain {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+  display: grid;
+
   min-height: 80vh;
 }
 
 
-#PageFooter{
+#PageFooter {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-min-height: 10vh;
+
+  min-height: 10vh;
+
   display: grid;
+
   background-color: #B2DFD5;
 
 
 
 }
 
-@media only screen and (min-width:  700px){
+@media only screen and (min-width: 700px) {
 
 
-  #PageHeader{
+  #PageHeader {
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-}
+  }
 
 
-  #PageMain{
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  #PageMain {
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 
-}
+  }
 
-  #PageFooter{
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  #PageFooter {
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 
   }
 
 }
 
-@media only screen and (min-width: 1000px){
+@media only screen and (min-width: 1000px) {
 
-  #PageHeader{
-grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
-}
+  #PageHeader {
 
-#PageMain{
-  grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
 
 
-  min-height: 70vh;
-}
+    min-height: 10vh;
+
+  }
+
+  #PageMain {
+
+    grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
 
 
-#PageFooter{
-  grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+    min-height: 70vh;
+  }
 
 
-  min-height: 10vh;
-  
-}
+  #PageFooter {
+    grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+
+
+    min-height: 10vh;
+
+  }
 }
 </style>
