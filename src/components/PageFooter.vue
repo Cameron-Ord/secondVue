@@ -44,6 +44,14 @@ height: 100%;
 
 .footer_span{
 
+    display: grid;
+
+    grid-template-rows: 25px 25px 25px;
+
+    align-items: center;
+
+
+    justify-items: center;
 
 }
 </style>
