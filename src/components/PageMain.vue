@@ -45,7 +45,13 @@ export default {
 
     text-align: center;
 
-    grid-template-rows: 50px 100px 1fr;
+    grid-template-rows: 50px 100px 1fr 50px;
+
+    background-color: #B2DFD5;
+
+    width: 80%;
+
+    border-radius: 25px;
 
 }
 
@@ -59,7 +65,7 @@ img{
 
 width: 75%;
 height: 100%;
-
+border-radius: 25px;
 
 }
 </style>
